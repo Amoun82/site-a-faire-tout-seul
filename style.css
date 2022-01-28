@@ -1,0 +1,352 @@
+/* le fond de la page et toutes les pages */
+body
+{
+    background-color:darkcyan;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color:red;
+}
+
+h1:hover,h2:hover
+{
+    color:gold;
+}
+
+footer>p:hover
+{
+    color: rebeccapurple;
+}
+
+section:hover
+{
+    background-color:darkgrey;
+}
+
+/* l'entete du site */
+header
+{
+    background-image: url('https://pixy.org/src/487/thumbs350/4875275.jpg') ;
+    background-size:cover;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+h1
+{
+    color: brown;
+    text-align: center;
+}
+
+ul
+{
+    display: flex;
+    margin-right: 20px;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+li
+{
+    padding: 0 10px;
+}
+
+
+/* pied de page du site */
+footer
+{
+    background-image: url('https://pixy.org/src/487/thumbs350/4875275.jpg') ;
+    background-size:cover;
+    text-align: center ;
+    padding: 50px 0; 
+}
+
+footer a,footer p
+{
+    display: inline;
+    padding: 0 100px ;
+}
+
+
+/* dans la page accueil*/
+.conteneur
+{
+    border: 5px double black;
+    padding: 10px ;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    text-align: center;
+}
+
+.maSection1
+{
+    border: 1px dashed black;
+    padding: 5px;
+    grid-column: 1/3 ;
+    grid-row: 1;
+}
+
+.maSection2
+{
+    border: 1px dashed black;
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.maSection3
+{
+    border: 1px dashed black;
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+.maSection4
+{
+    border: 1px dashed black;
+    padding: 5px;
+    grid-column: 1/2 ;
+    grid-row: 2;
+}
+
+.maSection5
+{
+    border: 1px dashed black;
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 3;
+}
+
+.image
+{
+    height: 200px;
+    width: 200px;
+}
+
+#image1
+{
+    height: 300px ;
+    width: 500px;
+}
+
+figcaption:hover
+{
+    color:blue ;
+}
+
+
+/* dans la page contact */
+form
+{
+    text-align: center;
+    padding: 5px;
+}
+
+label,input
+{
+    border-radius: 15px;
+    margin: 0.5% 0;
+}
+
+input
+{
+    border-color: red;
+    background-color:lightgray;
+    color:blue;
+}
+
+.saisie
+{
+    height: 20px;
+}
+
+select
+{
+    margin-top: 20px;
+}
+
+input:hover
+{
+    background-color: darkgrey;
+}
+
+
+/* dans la page A propos */
+.imagePropos
+{
+    height: 200px;
+    width: 200px;
+}
+
+#sectionPropos
+{
+    border: 1px dashed black;
+    padding: 20px ;
+    display: grid;
+    grid-template-columns: 4;
+    text-align: center;
+}
+
+.sectionPropos1
+{
+    grid-column: 1;
+}
+
+.sectionPropos2
+{
+    grid-column: 2;
+}
+
+.sectionPropos3
+{
+    grid-column: 3;
+}
+
+.sectionPropos4
+{
+    grid-column: 4;
+}
+
+
+/* dans la page service */
+table,tr,td,th
+{
+    border: 1px solid black;
+}
+
+#exemple
+{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-row: 1;
+    margin: 20px 0;
+}
+
+#divService1
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* le tableau en grid c'est une mauvaise pratique lol */
+#divService2
+{
+    margin-top: 40px;
+    margin-right: 150px;
+    grid-column: 2;
+    grid-row: 1;
+    border: 3px double black;
+    height: 105px;
+}
+
+#gridTableau
+{
+    display: grid;
+}
+
+#titreTableau
+{
+   border-bottom: 3px double black;
+}
+
+#titreTableau
+{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+#titreColonne
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: 3px double black;
+    grid-row: 2;   
+}
+
+.bordure
+{
+    border-left: 3px double;
+    border-right: 3px double;
+}
+
+#titrecolonne1
+{
+    grid-column: 1;  
+}
+
+#titrecolonne2
+{
+    grid-column: 2;
+}
+
+#titrecolonne3
+{
+    grid-column: 3;
+}
+
+
+#celluleligne
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: 3px double black;
+    grid-row: 3;
+}
+
+#celluleligne1colonne1
+{
+    grid-column: 1;   
+}
+
+#celluleligne1colonne2
+{
+    grid-column: 2;
+}
+
+#celluleligne1colonne3
+{
+    grid-column: 3;
+}
+
+#celluleligne2
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: 3px double black;
+    grid-row: 4;
+}
+
+#celluleligne3
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: 3px double black;
+    grid-row: 5;
+}
+
+#mainService
+{
+    text-align: center;
+}
+
+button
+{
+    align-items: center;
+}
+
+.bouton
+{
+    margin: 15px 0 ;
+    text-align: center;
+}
